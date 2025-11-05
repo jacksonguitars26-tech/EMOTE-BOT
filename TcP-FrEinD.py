@@ -6,6 +6,7 @@ from datetime import datetime
 # Global key/iv and API queue
 key = None
 iv = None
+region = None  
 
 import asyncio
 api_command_queue = asyncio.Queue()
@@ -602,7 +603,7 @@ async def MaiiiinE():
 
     ToKen = MajoRLoGinauTh.token
     TarGeT = MajoRLoGinauTh.account_uid
-    global key, iv
+    global key, iv, region
     key = MajoRLoGinauTh.key
     iv = MajoRLoGinauTh.iv
     region = MajoRLoGinauTh.region
